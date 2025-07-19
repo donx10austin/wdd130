@@ -1,0 +1,18 @@
+/* css/style.css */
+
+body {
+  font-family: 'MyAwesomeBodyFont', sans-serif; /* Use the Fontspring body font name here */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: 'MyAwesomeHeadingFont', cursive; /* Use the Fontspring heading font name here */
+  font-size: 2.5rem;
+  color: #222;
+}
+
+/* ... rest of your styles ... */
