@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Austin Anumudu | WDD 130</title>
+  <meta name="description" content="Austin Anumudu's personal website for WDD 130." />
+  <meta name="author" content="Austin Anumudu" />
+
+  <style>
+    /* ✅ Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+    /* ✅ Apply Roboto to body text */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ✅ Apply Rock Salt to main heading */
+    h1 {
+      font-family: 'Rock Salt', cursive;
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    header,
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    aside {
+      background-color: #e0e0e0;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="wwr/">Rafting Site</a>
+      <a href="https://www.churchofjesuschrist.org">Church of Jesus Christ</a>
+      <a href="https://www.churchofjesuschrist.org/temples">Temples</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Austin Anumudu</h1>
+      <img src="images/profile.jpg" alt="Portrait of Austin Anumudu" class="myimage" />
+      <p>Hello! My name is Austin Anumudu, and I am from Lagos, Nigeria. I am a painter, I love football, and I'm a Liverpool FC fan.
+        I am currently studying Software Development at BYU-Idaho. I’m super excited to learn more about web development and design.
+        I look forward to creating my own website and exploring more about the tech industry. I'm excited to see what the future holds for me.
+      </p>
+    </section>
+
+    <aside>
+      <h2>Nigeria</h2>
+      <img src="images/Nigeria.jpg" alt="Map of Nigeria" />
+      <p>Nigeria is a country located in the western part of Africa. With a population of over 250 million people, it is well known for its hospitality.
+        Nigerians are recognized for being peaceful, accommodating, hardworking, and God-fearing. Major tribes include the Igbo, Hausa, and Yoruba.
+        The country is rich in natural resources and is one of the world's major exporters of crude oil and gold. Many citizens work as farmers, doctors,
+        bankers, and engineers. Nigeria has 36 states, including Lagos, which hosts the largest seaport in Africa, while Abuja serves as the capital city.
+      </p>
+    </aside>
+
+    <section>
+      <h2>Brigham Young University - Idaho</h2>
+      <img src="https://www.byui.edu/images/service-sites/map-banner.jpg" alt="BYU Idaho Map" />
+      <p>BYU-Idaho is a comfortable place to learn and grow as a disciple of Jesus Christ because students, faculty, and employees share a commitment to live the gospel.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Austin Anumudu - Lagos, Nigeria</p>
+  </footer>
+</body>
+
+</html>
