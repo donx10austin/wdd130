@@ -73,7 +73,7 @@
 
   <main>
     <section>
-      <h1>Austin Anumudu</h1>
+      <h1>Austin Anumudu
       <img src="images/profile.jpg" alt="Portrait of Austin Anumudu" class="myimage" />
       <p>Hello! My name is Austin Anumudu, and I am from Lagos, Nigeria. I am a painter, I love football, and I'm a Liverpool FC fan.
         I am currently studying Software Development at BYU-Idaho. I’m super excited to learn more about web development and design.
@@ -83,7 +83,7 @@
 
     <aside>
       <h2>Nigeria</h2>
-      <img src="images/Nigeria.jpg" alt="Map of Nigeria" />
+      <img src="nigeria.jpg"alt="Map of Nigeria" />
       <p>Nigeria is a country located in the western part of Africa. With a population of over 250 million people, it is well known for its hospitality.
         Nigerians are recognized for being peaceful, accommodating, hardworking, and God-fearing. Major tribes include the Igbo, Hausa, and Yoruba.
         The country is rich in natural resources and is one of the world's major exporters of crude oil and gold. Many citizens work as farmers, doctors,
