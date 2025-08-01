@@ -11,6 +11,64 @@
     --body-font: "Lato", sans-serif;
 }
 
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;	height: auto;
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
+}
+
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.navigation li {
+	flex: 1 1 auto;
+}
+
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+body {
+	font-family: Acme, Arial, sans-serfi;
+}
+
+article {
+	margin: 1em auto;
+	border: 1px solid rgb(0 0 0 / 10%);
+	padding: 1em;
+	background-color: #ace;
+	width: min(600px, 100%);
+	font-size: 1.2rem;
+}
+
 
 
 * {
@@ -22,6 +80,7 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
+
 header,
 main,
 footer {
@@ -42,17 +101,14 @@ header {
     color: var(--accent2-color);
 }
 
-
-
-.logo img {
-    margin: 0 0.25rem 0 1rem;
-    width: 64px;
-    height: auto;
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 h1 {
     font-size: 2rem;
-    font-family: var(--heading-font);
 }
 
 nav {
@@ -77,37 +133,6 @@ nav a:hover {
     background-color: var(--accent1--color);
 }
 
-body {
-    font-family: var(--body-font);
-}
-
-article {
-   
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1em;
-    background-color: rgba(170, 204, 238, 0.451);
-    font-size: 1.2rem;
-    position: absolute;
-    top: 140px;
-    left: 50px;
-    right: 50px
-}
-
-
-
-
-
-
-
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-
-
 
 .hero {
     position: relative;
@@ -129,9 +154,19 @@ h2 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text - make sure there is enough contrast with the background-color */
 }
 
+article {
+
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1em;
+    background-color: rgba(170, 204, 238, 0.451);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    right: 50px
+}
 
 .hero article img {
     float: right;
@@ -139,6 +174,16 @@ h2 {
     width: 125px;
     border: solid 1px rgba(11, 55, 150, 1);
     box-shadow: 0 0 30px rgb(28, 132, 217);
+}
+
+.history { 
+    padding: 1em;
+    background-color: #f7c1bb;
+    color: #353a47;
+}
+
+.adventures {
+    /* Add your desired CSS properties here */
 }
 
 figure {
@@ -150,8 +195,6 @@ figure {
     margin: auto;
 }
 
-
-
 figcaption {
     background-color: #222;
     color: #fff;
@@ -161,11 +204,11 @@ figcaption {
 }
 
 
-
-.socialmedia img {
-    width: 40px;
+footer {
+    margin: 0;
 }
 
-footer  {
-    margin: 0
+.socialmedia a img {
+    width: 40px;
+    text-decoration: none;
 }
