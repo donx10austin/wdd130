@@ -177,9 +177,8 @@ article {
 }
 
 .history { 
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 1em;
+    display: flex;
+    flex-wrap: 1em;
     padding: 1em;
     background-color: #f7c1bb;
     color: #353a47
@@ -187,11 +186,11 @@ article {
 
 
 .history h2, adventures h2 {
-    width: 100%;
-    text-align: center;
-    }
+     width: 100%;
+     text-align: center;
+}
 
-    .history p {
+.history p {
     width: 30%;
     flex-grow: 1;
 }
@@ -199,6 +198,7 @@ article {
     width: 25%;
     padding: 0 10px;
 }
+
 
 .adventures {
     /* Add your desired CSS properties here */
