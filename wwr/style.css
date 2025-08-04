@@ -1,0 +1,122 @@
+/* --- General Body and Typography --- */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    font-family: 'Cormorant', serif;
+    color: #1d2374;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* --- Header and Navigation --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1d2374;
+    font-weight: bold;
+}
+
+/* --- Hero Section --- */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 2;
+}
+
+/* --- Mission Statement Content (Aligned with Wireframe) --- */
+.mission-statement-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top for a cleaner look */
+    padding: 40px 20px;
+    gap: 40px; /* Increased gap for better spacing */
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-statement-content img {
+    max-width: 300px; /* A bit larger to be a prominent part of the section */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mission-statement-text {
+    flex: 1; /* Allows the text content to take up the remaining space */
+}
+
+.mission-statement-text p {
+    margin: 0 0 15px 0; /* Add bottom margin to paragraphs for separation */
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* --- History Section (Aligned with Wireframe) --- */
+.history {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.history h2 {
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.history-content p {
+    flex: 1;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.history-content img {
+    width: 100%;
+    max-width: 350px; /* Adjusted size for better balance in the flex container */
+    height: auto;
+    border-radius: 8px;
+}
