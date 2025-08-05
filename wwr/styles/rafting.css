@@ -1,12 +1,4 @@
-:root {
-   --primary-color: #0941c3;
-    --secondary-color:#fff;
-    --accent1-color:#c21111;
-    --accent2-color:darkblue;
-    --heading-font: "PT Serif", serif;
-    --body-font: "Lato", sans-serif;
-}
-
+/* Base Reset */
 * {
     margin: 0;
     padding: 0;
@@ -14,182 +6,206 @@
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--accent2-color); 
-}
-
-main {
-    max-width: 840px; 
-    margin: 0 auto;
-}
-
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--accent2-color);
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-    max-width: 100%;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 90%; 
-    padding: 16px;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    z-index: 10; 
-}
-
-article {
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.hero article img {
-    float: none; 
-    width: 125px;
-    margin: 0; 
-    border: 1px solid #fff;
-    box-shadow:  #c21111 0px 0px 10px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f9fc;
+    color: #333;
 }
 
 header {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    background-color: var(--primary-color);
-    margin-bottom: 2px;
-    max-width: 840px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #026aa7;
+    color: #fff;
 }
 
 header img {
-    width: 100px;
-    height: auto;
+    max-height: 60px;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5em;
-}
-
-nav a {
-    color: var(--secondary-color);
-    font-family: var(--heading-font);
-    font-weight: 900;
+header nav a {
+    color: #fff;
+    margin-left: 1rem;
     text-decoration: none;
+    font-weight: 600;
 }
 
-.history {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 840px;
+header nav a:hover {
+    text-decoration: underline;
 }
 
-.history-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    color: var(--accent2-color);
-    opacity: 0.9;
-    align-items: center;
-}
-
-.history-content img {
-    place-self: center;
-    max-width: 100%;
-}
-
-.adventures {
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 16px;
-    color: var(--accent2-color);
-    opacity: 0.9;
-}
-
-section h2 {
+.page-title {
     text-align: center;
-    padding-bottom: 10px;
-    grid-column: 1/-1;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-family: 'Cormorant', serif;
+    color: #026aa7;
 }
 
-.image-gallery-flex {
+.contact-container {
     display: flex;
-    flex-wrap: nowrap; 
-    overflow-x: auto; 
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.image-gallery-flex figure {
-    flex: 0 0 auto; 
-    width: 150px; 
+/* Form Section */
+.contact-form-section {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.image-gallery-flex figure img {
+.contact-form-section h2 {
+    margin-bottom: 1rem;
+    color: #026aa7;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
     width: 100%;
-    height: 150px; 
-    object-fit: cover; 
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 0.25rem;
+    font-size: 1rem;
 }
 
-figcaption {
+.contact-form fieldset {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.contact-form legend {
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.contact-form button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #026aa7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #035c91;
+}
+
+/* Company Info */
+.company-info-section {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.company-info-section h2 {
+    color: #026aa7;
+    margin-bottom: 1rem;
+}
+
+.company-info-section p {
+    margin-bottom: 0.5rem;
+}
+
+.company-info-section iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    margin-top: 1rem;
+    border-radius: 6px;
+}
+
+/* Employee Profiles */
+.employee-profiles-section {
+    flex: 1 1 100%;
+    margin-top: 2rem;
+}
+
+.employee-profiles-section h2 {
+    text-align: center;
+    color: #026aa7;
+    margin-bottom: 1.5rem;
+}
+
+.employee-profile {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
     text-align: center;
 }
 
+.employee-profile img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.employee-profile h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #026aa7;
+}
+
+.employee-profile p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Footer */
 footer {
-    display: flex;
-    position: relative;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: #026aa7;
+    color: white;
+    padding: 1.5rem;
     text-align: center;
-    max-width: 840px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2rem;
 }
 
-footer p {
-    margin:  0 auto;
- }
+footer nav.socialmedia {
+    margin: 1rem 0;
+}
 
- .socialmedia {
-    position: absolute;
-    right: 0;
-    margin: 0;
-    padding: 0;
- }
+footer nav.socialmedia a img {
+    width: 32px;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
 
+footer nav.socialmedia a img:hover {
+    transform: scale(1.1);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
