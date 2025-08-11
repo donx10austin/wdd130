@@ -1,149 +1,140 @@
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
 }
 
+/* HEADER */
 header {
-  background: #006994;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4b2e83;
+    padding: 10px 20px;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+header .logo img {
+    height: 50px;
 }
 
-header nav ul li {
-  margin: 0 15px;
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+header nav a.active,
+header nav a:hover {
+    text-decoration: underline;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #eee;
 }
 
-/* Sections */
-section {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 1100px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
 }
 
-h1, h2 {
-  margin-bottom: 10px;
+.hero-text h1 {
+    color: #4b2e83;
+    font-size: 2.5em;
+    margin-bottom: 15px;
 }
 
-/* Trip Cards */
-.trip-card {
-  background: #e7f4f9;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 15px;
-  margin: 15px 0;
+.hero-image img {
+    width: 300px;
+    border-radius: 8px;
 }
 
-.trip-card img {
-  max-width: 100%;
-  border-radius: 8px;
+/* HISTORY SECTION */
+.history {
+    padding: 40px;
+    text-align: center;
 }
 
-.cta-button {
-  display: inline-block;
-  background: #006994;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 10px;
+.history h2 {
+    color: #4b2e83;
+    margin-bottom: 20px;
 }
 
-.cta-button:hover {
-  background: #004d6d;
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
-/* Contact Form */
-form {
-  display: flex;
-  flex-direction: column;
+.history-text {
+    text-align: left;
 }
 
-form label {
-  margin-top: 10px;
-  font-weight: bold;
+.history-image img {
+    width: 100%;
+    border-radius: 8px;
 }
 
-form input,
-form textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+/* GALLERY SECTION */
+.gallery {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
 }
 
-form button {
-  background: #006994;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  margin-top: 15px;
-  border-radius: 5px;
-  cursor: pointer;
+.gallery h2 {
+    color: #4b2e83;
+    margin-bottom: 20px;
 }
 
-form button:hover {
-  background: #004d6d;
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-/* Newsletter Checkbox Styling */
-.newsletter-label {
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-  font-size: 0.95rem;
-  color: #333;
-  cursor: pointer;
+.gallery-grid figure {
+    text-align: center;
 }
 
-.newsletter-label input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-  accent-color: #006994; /* modern browsers */
+.gallery-grid img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.newsletter-label span {
-  user-select: none;
+.gallery-grid figcaption {
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-  text-align: center;
-  padding: 10px;
-  background: #006994;
-  color: #fff;
-  margin-top: 20px;
+    background: #4b2e83;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer p {
-  margin: 5px 0;
+footer .social img {
+    width: 25px;
+    margin: 0 5px;
 }
