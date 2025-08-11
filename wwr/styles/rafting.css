@@ -1,161 +1,152 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Body */
 body {
-    font-family: 'Lato', Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-}
-
-/* Header */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #d4c1f0;
-}
-
-header img {
-    height: 50px;
-}
-
-header nav a {
-    margin: 0 1rem;
-    text-decoration: none;
     color: #333;
+}
+
+/* HEADER */
+header {
+    background: #004466;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+header .logo {
+    font-size: 1.5rem;
     font-weight: bold;
 }
-
-/* Hero */
-.hero {
-    text-align: center;
-    padding: 2rem;
-    background-color: #fff;
-}
-
-/* Info Section */
-.info-section {
+nav ul {
     display: flex;
-    gap: 1rem;
-    padding: 2rem;
-    background-color: #fff;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.info-card {
-    flex: 1;
-    padding: 1rem;
-    background: #eaeaea;
-    border-radius: 5px;
-}
-
-/* About Section (History) */
-.about-content {
+/* HERO */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    padding: 3rem;
-    background-color: #fff;
+}
+.hero-content {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.hero .btn {
+    background: #ff6600;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+.hero .btn:hover {
+    background: #ff884d;
 }
 
-.about-column {
-    flex: 1;
-    font-size: 1rem;
-    text-align: justify;
+/* SECTIONS */
+section {
+    padding: 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #004466;
 }
 
-.about-image {
-    flex: 0 0 200px;
+/* EMPLOYEES */
+.employees {
     display: flex;
+    gap: 2rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
-
-.about-image img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-/* Trips (Adventure Awaits You) */
-.trips-container {
-    background: #fff;
-    padding: 3rem;
+.employee {
     text-align: center;
 }
-
-.trip-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 2rem;
+.employee img {
+    width: 200px;
+    border-radius: 10px;
 }
-
-.trip-card {
-    width: 150px;
-}
-
-.trip-card img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.trip-card p {
+.employee h3 {
     margin-top: 0.5rem;
 }
 
-/* Contact */
-.contact-container {
-    background: #fff;
-    padding: 3rem;
+/* TRIPS */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
-
-.contact-form-section,
-.contact-info-section {
-    margin-bottom: 2rem;
-}
-
-.contact-form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
-}
-
-.contact-form input,
-.contact-form textarea {
+.trip img {
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.trip h3 {
+    margin-top: 0.5rem;
 }
 
-/* Footer */
+/* CONTACT FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 500px;
+    margin: 1rem auto;
+}
+input, textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #004466;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #006699;
+}
+
+/* FOOTER */
 footer {
-    background-color: #d4c1f0;
+    background: #004466;
+    color: white;
     text-align: center;
     padding: 1rem;
 }
-
-footer img {
-    height: 20px;
+.social-icons a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .trip-grid {
-        justify-content: center;
-    }
+.social-icons a:hover {
+    color: #ff6600;
 }
