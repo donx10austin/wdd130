@@ -1,116 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>White Water Rafting</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<!-- HEADER & NAV -->
-<header>
+  <!-- HEADER & NAV -->
+  <header>
     <div class="logo">White Water Rafting</div>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#trips">Trips</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#trips">Trips</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<!-- HOME SECTION -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Experience the Thrill of White Water Rafting</h1>
-        <p>Adventure awaits in every splash</p>
-        <a href="#trips" class="btn">View Our Trips</a>
+  <!-- HOME SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content left-align">
+      <h1>Experience the Thrill of White Water Rafting</h1>
+      <p class="subheading">Adventure awaits in every splash</p>
+      <a href="#trips" class="btn">View Our Trips</a>
     </div>
-</section>
+  </section>
 
-<!-- ABOUT US SECTION -->
-<section id="about">
+  <!-- ABOUT US SECTION -->
+  <section id="about">
     <h2>About Us</h2>
-    <p>We have been guiding adventurers through the wild waters for over 20 years. 
-       Our mission is to create unforgettable rafting experiences for thrill-seekers 
-       and nature lovers alike.</p>
+    <p>
+      We have been guiding adventurers through the wild waters for over 20
+      years. Our mission is to create unforgettable rafting experiences for
+      thrill-seekers and nature lovers alike.
+    </p>
 
     <div class="employees">
-        <div class="employee">
-            <img src="images/imagemale.jpg" alt="John - Lead Guide">
-            <h3>John Doe</h3>
-            <p>Lead Guide</p>
-        </div>
-        <div class="employee">
-            <img src="images/imageface.jpg" alt="Jane - Safety Coordinator">
-            <h3>Jane Smith</h3>
-            <p>Safety Coordinator</p>
-        </div>
-        <div class="employee">
-            <img src="images/imageface2.jpg" alt="Alex - Photographer">
-            <h3>Alex Johnson</h3>
-            <p>Adventure Photographer</p>
-        </div>
+      <div class="employee">
+        <img src="images/imagemale.jpg" alt="John - Lead Guide" />
+        <h3>John Doe</h3>
+        <p>Lead Guide</p>
+      </div>
+      <div class="employee">
+        <img src="images/imageface.jpg" alt="Jane - Safety Coordinator" />
+        <h3>Jane Smith</h3>
+        <p>Safety Coordinator</p>
+      </div>
+      <div class="employee">
+        <img src="images/imageface2.jpg" alt="Alex - Photographer" />
+        <h3>Alex Johnson</h3>
+        <p>Adventure Photographer</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- TRIPS SECTION -->
-<section id="trips">
+  <!-- HISTORY SECTION -->
+  <section id="history">
+    <h2>Our History</h2>
+    <p>
+      Since our inception in 2003, we have led thousands of adventures through the
+      most thrilling rapids and calm rivers alike. Our guides are experts with decades
+      of experience, ensuring safety and fun every time.
+    </p>
+  </section>
+
+  <!-- TRIPS SECTION -->
+  <section id="trips">
     <h2>Our Trips</h2>
     <div class="trip-grid">
-        <div class="trip">
-            <img src="images/image13.jpg" alt="Rapid Rush">
-            <h3>Rapid Rush</h3>
-            <p>Feel the adrenaline as you navigate our most intense rapids.</p>
-        </div>
-        <div class="trip">
-            <img src="images/image5.jpg" alt="Family Float">
-            <h3>Family Float</h3>
-            <p>A calm and scenic ride perfect for all ages.</p>
-        </div>
-        <div class="trip">
-            <img src="images/image10.jpg" alt="Sunset Adventure">
-            <h3>Sunset Adventure</h3>
-            <p>Experience breathtaking views as the sun dips below the horizon.</p>
-        </div>
+      <div class="trip">
+        <img src="images/image13.jpg" alt="Rapid Rush" />
+        <h3>Rapid Rush</h3>
+        <p>Feel the adrenaline as you navigate our most intense rapids.</p>
+      </div>
+      <div class="trip">
+        <img src="images/image5.jpg" alt="Family Float" />
+        <h3>Family Float</h3>
+        <p>A calm and scenic ride perfect for all ages.</p>
+      </div>
+      <div class="trip">
+        <img src="images/image10.jpg" alt="Sunset Adventure" />
+        <h3>Sunset Adventure</h3>
+        <p>Experience breathtaking views as the sun dips below the horizon.</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- CONTACT SECTION -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@rafting.com | Phone: +1 555 123 4567</p>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
 
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+      <div class="contact-info">
+        <p><strong>Address:</strong> 2 Obanta Close off Obanta Avenue, Balogun, Ikeja, Lagos, Nigeria</p>
+        <p><strong>Phone:</strong> +234 808 138 7067</p>
+        <p><strong>Email:</strong> <a href="mailto:austinanumudu85@gmail.com">austinanumudu85@gmail.com</a></p>
+      </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+      <div class="map-container" style="margin-bottom: 2rem;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31706.484808922178!2d3.3266665406793794!3d6.608273257607753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s2%20Obanta%20Close%20off%20Obanta%20Avenue%2C%20Balogun%20Ikeja%20Lagos%20Nigeria!5e0!3m2!1sen!2sng!4v1754913237154!5m2!1sen!2sng"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Company Location on Google Maps"
+        ></iframe>
+      </div>
 
-        <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" rows="4" required></textarea>
+      <form class="contact-form" action="#" method="POST" novalidate>
+        <div class="form-group">
+          <label for="name">Name<span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Your full name"
+          />
+        </div>
 
-        
-        <label for="newsletter">Newsletter Dashboard:</label>
-        <textarea id="newsletter" name="newsletter" rows="4" required></textarea>
+        <div class="form-group">
+          <label for="email">Email<span aria-hidden="true">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Your email address"
+          />
+        </div>
 
-        <button type="submit">Send</button>
-    </form>
-</section>
+        <div class="form-group">
+          <label for="subject">Subject<span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            placeholder="Subject of your message"
+          />
+        </div>
 
-<!-- FOOTER -->
-<footer>
+        <div class="form-group">
+          <label for="message">Message<span aria-hidden="true">*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Write your message here"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
     <p>&copy; 2025 White Water Rafting</p>
     <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
-</footer>
-
+  </footer>
 </body>
 </html>
