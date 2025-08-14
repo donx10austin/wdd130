@@ -49,17 +49,15 @@
         <section class="slideshow-container-section">
             <h2>Gallery Adventures</h2>
             <div class="slideshow-container">
-                <div class="slide active">
-                    <img src="images/image1.jpg" alt="Rafters on a river with a guide" />
-                </div>
-                <div class="slide">
-                    <img src="images/image2.jpg" alt="Group of friends getting ready to raft" />
-                </div>
-                <div class="slide">
-                    <img src="images/image3.jpg" alt="Team paddling together down rapids" />
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+                <img src="images/image1.jpg" alt="Rafters on a river with a guide" />
+                <img src="images/image2.jpg" alt="Group of friends getting ready to raft" />
+                <img src="images/image3.jpg" alt="Team paddling together down rapids" />
+                <img src="images/image7.jpg" alt="Team paddling together down rapids" />
+                <img src="images/image8.jpg" alt="Team paddling together down rapids" />
+                <img src="images/image9.jpg" alt="Team paddling together down rapids" />
+                <img src="images/image11.jpg" alt="Team paddling together down rapids" />
+                <img src="images/image13.jpg" alt="Team paddling together down rapids" />
+                <img src="images/image5.jpg" alt="Team paddling together down rapids" />
             </div>
         </section>
         <section class="newsletter">
@@ -92,25 +90,5 @@
             </a>
         </nav>
     </footer>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex-1].style.display = "block";
-        }
-    </script>
 </body>
 </html>

@@ -147,6 +147,7 @@ main section {
 }
 
 
+/* Update the .slideshow-container section in your rafting.css file */
 
 .slideshow-container-section {
     background-color: var(--background-dark);
@@ -172,6 +173,7 @@ main section {
     object-fit: cover;
     border-radius: 8px;
 }
+
 
 .newsletter form {
     display: flex;
@@ -352,3 +354,13 @@ footer {
 .socialmedia img {
     width: 30px;
 }
+
+
+
+.book-trip-button {
+    background-color: var(--accent1-color); 
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+
