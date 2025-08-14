@@ -314,17 +314,28 @@ main section {
     cursor: pointer;
 }
 
+
+
 .employee-profiles-section {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     gap: 2rem;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .employee-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    flex: 1 1 200px;
+    flex-shrink: 0;
+    width: 250px;
 }
 
 .employee-profile img {
@@ -334,7 +345,6 @@ main section {
     object-fit: cover;
     margin-bottom: 1rem;
 }
-
 
 
 footer {
@@ -362,5 +372,6 @@ footer {
     color: var(--primary-color);
     font-weight: bold;
 }
+
 
 
