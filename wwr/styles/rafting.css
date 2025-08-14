@@ -24,6 +24,38 @@ h1, h2, h3 {
 }
 
 
+.mission-offer-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+}
+
+.mission-card,
+.offer-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.mission-card img,
+.offer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
 header {
     display: flex;
     justify-content: space-between;
