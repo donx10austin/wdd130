@@ -9,228 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <style>
-
-        :root {
-            --primary-color: #0d2c40; 
-            --secondary-color: #0b5161; 
-            --accent1-color: #c9e4ca; 
-            --accent2-color: #b7b8b6; 
-            --text-light: #f4f4f4;
-            --background-dark: #333333;
-            --headline-font: "Cormorant", serif;
-            --paragraph-font: "Lato", sans-serif;
-        }
-
-        body {
-            font-family: var(--paragraph-font);
-            color: var(--primary-color);
-            line-height: 1.6;
-            margin: 0;
-            background-color: var(--text-light);
-        }
-
-        h1, h2, h3 {
-            font-family: var(--headline-font);
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem;
-            background-color: var(--primary-color);
-            color: var(--text-light);
-        }
-
-        header img {
-            width: 150px;
-        }
-
-        header nav a {
-            color: var(--text-light);
-            text-decoration: none;
-            padding: 10px 15px;
-            font-weight: 700;
-        }
-
-        .hero {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-        .hero img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .hero h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 1rem 2rem;
-            border-radius: 10px;
-        }
-
-        main {
-            padding: 2rem 0;
-        }
-
-        main section {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-            border-radius: 10px;
-        }
-
-        .adventure-intro {
-            text-align: center;
-            background-color: var(--accent1-color);
-        }
-
-        .mission-offer-cards {
-            display: flex;
-            justify-content: space-around;
-            gap: 2rem;
-            background-color: var(--accent2-color);
-            color: var(--primary-color);
-        }
-
-        .card {
-            background-color: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            flex: 1;
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        
-        .slideshow-container-section {
-            background-color: var(--background-dark);
-            color: var(--text-light);
-            text-align: center;
-        }
-
-        .slideshow-container {
-            max-width: 800px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        
-        .slideshow-container .slide {
-            width: 100%;
-            display: none; 
-        }
-        
-        .slideshow-container .slide.active {
-            display: block;
-        }
-        
-        .slideshow-container img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-        
-        .slideshow-container .next,
-        .slideshow-container .prev {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: auto;
-            padding: 16px;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            text-decoration: none;
-            user-select: none;
-        }
-
-        .slideshow-container .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .slideshow-container .prev {
-            left: 0;
-        }
-
-        .slideshow-container .next:hover,
-        .slideshow-container .prev:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .newsletter, .book-us {
-            text-align: center;
-        }
-        
-        .newsletter form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .newsletter input {
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .button {
-            background-color: var(--secondary-color);
-            color: var(--text-light);
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #0a4450;
-        }
-        
-        .book-us {
-            background-color: var(--secondary-color);
-            color: var(--text-light);
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            text-align: center;
-            padding: 1rem;
-        }
-        
-        .socialmedia img {
-            width: 30px;
-            margin: 0 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
@@ -249,25 +28,10 @@
             <h1>Experience the Thrill of WhiteWater Rafting</h1>
             <img src="images/image9.jpg" alt="People tubing down a river">
         </div>
-
         <section class="adventure-intro">
             <h2>Your Adventure Awaits!</h2>
             <p>WhiteWater Rafting has been guiding adventurous through the thrilling rapids of Cagayan de Oro since 2010. Founded with a passion for safe and unforgettable rafting experiences, our team combines local knowledge with professional expertise to make every trip memorable.</p>
         </section>
-
-        <section class="mission-offer-cards">
-            <div class="card">
-                <img src="images/image2.jpg" alt="Rafters navigating rapids">
-                <h3>Our Mission</h3>
-                <p>To provide safe, thrilling whitewater rafting adventures with local expertise and care.</p>
-            </div>
-            <div class="card">
-                <img src="images/image6.jpg" alt="Group of happy rafters">
-                <h3>What We Offer</h3>
-                <p>Guided rafting trips, team-building experiences, and professional photo/video packages.</p>
-            </div>
-        </section>
-        
         <section class="slideshow-container-section">
             <h2>Gallery Adventures</h2>
             <div class="slideshow-container">
@@ -280,30 +44,10 @@
                 <div class="slide">
                     <img src="images/image3.jpg" alt="Team paddling together down rapids" />
                 </div>
-                <div class="slide">
-                    <img src="images/image7.jpg" alt="Team paddling together down rapids" />
-                </div>
-                <div class="slide">
-                    <img src="images/image8.jpg" alt="Team paddling together down rapids" />
-                </div>
-                <div class="slide">
-                    <img src="images/image9.jpg" alt="Team paddling together down rapids" />
-                </div>
-                <div class="slide">
-                    <img src="images/image11.jpg" alt="Team paddling together down rapids" />
-                </div>
-                <div class="slide">
-                    <img src="images/image13.jpg" alt="Team paddling together down rapids" />
-                </div>
-                <div class="slide">
-                    <img src="images/image5.jpg" alt="Team paddling together down rapids" />
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
         </section>
-
         <section class="newsletter">
             <h2>Stay Updated on Our Tours!</h2>
             <form>
@@ -314,16 +58,14 @@
                 <button type="submit" class="button">Sign Up For Updates</button>
             </form>
         </section>
-
         <section class="book-us">
             <h2>Book with Us!</h2>
             <p>Join us for an unforgettable rafting experience. Paddle through wild waters and stunning landscapes!</p>
             <a href="trips.html" class="button book-trip-button">Book Your Trip Now</a>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2025 WhiteWater | Austin Anumudu</p>
+        <p>© 2025 WhiteWater Rafting| Austin Anumudu</p>
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebookicon.webp" alt="Facebook Logo">
@@ -336,21 +78,15 @@
             </a>
         </nav>
     </footer>
-
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
-
-        // Next/previous controls
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
-
-        // Thumbnail image controls
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
-
         function showSlides(n) {
             let i;
             let slides = document.getElementsByClassName("slide");

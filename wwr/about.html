@@ -8,321 +8,65 @@
     <meta name="author" content="Austin Anumudu">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;0,300;0,400;0,700;0,900&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS for modern styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <style>
-        /* General Body and Main Container Styling */
-        body {
-            font-family: 'Lato', sans-serif;
-            color: #333;
-            background-color: #f8f9fa;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        /* Header and Navigation */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        header img {
-            height: 60px;
-        }
-
-        header nav a {
-            text-decoration: none;
-            color: #333;
-            margin-left: 2rem;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        header nav a:hover {
-            color: #007bff;
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-        .hero img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            filter: brightness(70%);
-        }
-
-        .hero h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        /* Adventure Intro Section */
-        .adventure-intro {
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        .adventure-intro h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #007bff;
-        }
-
-        .adventure-intro p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Three-Column Layout (Mission, Image, Offer) */
-        .mission-offer-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 2rem;
-            padding: 2rem 0;
-        }
-
-        .mission-card,
-        .offer-card {
-            flex: 1 1 300px; /* Allow items to grow and shrink, with a base of 300px */
-            text-align: center;
-            padding: 1.5rem;
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .mission-card:hover,
-        .offer-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .center-image {
-            flex: 2 1 400px; /* Make the image larger than the cards */
-            text-align: center;
-        }
-
-        .center-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .mission-card h3,
-        .offer-card h3 {
-            font-size: 2rem;
-            color: #007bff;
-            margin-bottom: 0.5rem;
-        }
-
-        .mission-card p,
-        .offer-card p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        /* Newsletter and Book Us Sections */
-        .newsletter,
-        .book-us {
-            background-color: #e9ecef;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .newsletter h2,
-        .book-us h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #007bff;
-        }
-
-        .newsletter form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .newsletter input {
-            padding: 0.75rem;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            width: 100%;
-        }
-
-        .newsletter button,
-        .book-us a.button {
-            background-color: #007bff;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .newsletter button:hover,
-        .book-us a.button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            padding: 1.5rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        .socialmedia img {
-            height: 30px;
-            margin-left: 1rem;
-            transition: opacity 0.3s ease;
-        }
-
-        .socialmedia img:hover {
-            opacity: 0.7;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-            }
-            header nav a {
-                margin: 0.5rem 0;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .mission-offer-container {
-                flex-direction: column;
-            }
-            .mission-card,
-            .offer-card,
-            .center-image {
-                flex-basis: 100%;
-            }
-        }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
-<body class="font-sans bg-gray-50 text-gray-800">
-    <header class="bg-gray-900 text-white p-4 flex flex-col sm:flex-row justify-between items-center shadow-lg">
-        <a href="index.html" class="flex-shrink-0 mb-4 sm:mb-0">
-            <img src="images/whitewater.png" alt="Rafting Company Logo" class="h-12">
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/whitewater.png" alt="Rafting Company Logo">
         </a>
-        <nav class="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2">
-            <a href="index.html" class="hover:text-amber-400 transition-colors duration-200">Home</a>
-            <a href="about.html" class="text-amber-400 font-bold">About Us</a>
-            <a href="trips.html" class="hover:text-amber-400 transition-colors duration-200">Our Trips</a>
-            <a href="contact.html" class="hover:text-amber-400 transition-colors duration-200">Contact Us</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Our Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-
-    <main class="container mx-auto px-4 py-8">
-        <div class="hero relative w-full h-80 sm:h-96 md:h-120 overflow-hidden rounded-xl shadow-lg mb-8">
-            <img src="images/image10.jpg" alt="People tubing down a river" class="w-full h-full object-cover">
-            <h1 class="absolute inset-0 flex items-center justify-center text-center text-white text-3xl sm:text-4xl md:text-5xl font-bold bg-black bg-opacity-50 p-4">
-                Whitewater Rafting - Experience the Thrill
-            </h1>
+    <main>
+        <div class="hero">
+            <h1>Whitewater Rafting - Experience the Thrill</h1>
+            <img src="images/image10.jpg" alt="People tubing down a river">
         </div>
-        
-        <section class="adventure-intro text-center mb-12">
-            <h2 class="text-3xl font-serif text-gray-900 mb-4">Your Adventure Awaits!</h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                WhiteWater Rafting has been guiding adventurous through the thrilling rapids of Cagayan de Oro since 2010. Founded with a passion for safe and unforgettable rafting experiences, our team combines local knowledge with professional expertise to make every trip memorable.
-            </p>
+        <section class="adventure-intro">
+            <h2>Your Adventure Awaits!</h2>
+            <p>WhiteWater Rafting has been guiding adventurous through the thrilling rapids of Cagayan de Oro since 2010. Founded with a passion for safe and unforgettable rafting experiences, our team combines local knowledge with professional expertise to make every trip memorable.</p>
         </section>
-
-        <!-- New container for mission, image, and offer using Flexbox -->
-        <section class="mission-offer-container flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
-            <div class="mission-card flex-1 p-6 bg-white rounded-xl shadow-lg border border-gray-200 text-center">
-                <h3 class="text-2xl font-serif text-gray-900 mb-2">Our Mission</h3>
-                <p class="text-gray-600">To provide safe, thrilling whitewater rafting adventures with local expertise and care.</p>
+        <section class="mission-offer-container">
+            <div class="mission-card">
+                <h3>Our Mission</h3>
+                <p>To provide safe, thrilling whitewater rafting adventures with local expertise and care.</p>
             </div>
-
-            <div class="center-image flex-1">
-                <img src="images/image6.jpg" alt="Group of happy rafters" class="rounded-xl shadow-xl w-full h-auto">
+            <div class="center-image">
+                <img src="images/image6.jpg" alt="Group of happy rafters">
             </div>
-
-            <div class="offer-card flex-1 p-6 bg-white rounded-xl shadow-lg border border-gray-200 text-center">
-                <h3 class="text-2xl font-serif text-gray-900 mb-2">What We Offer</h3>
-                <p class="text-gray-600">Guided rafting trips, team-building experiences, and professional photo/video packages.</p>
+            <div class="offer-card">
+                <h3>What We Offer</h3>
+                <p>Guided rafting trips, team-building experiences, and professional photo/video packages.</p>
             </div>
         </section>
-
-        <section class="slideshow-container-section mb-12">
-            <h2 class="text-3xl font-serif text-center text-gray-900 mb-6">Adventure Awaits You</h2>
-            <div class="slideshow-container flex flex-col md:flex-row justify-center items-center gap-4 mx-auto max-w-6xl">
-                <div class="flex-1 rounded-xl shadow-lg overflow-hidden">
-                    <img src="images/image11.jpg" alt="Rafters on a river with a guide" class="w-full h-full object-cover">
-                </div>
-                <div class="flex-1 rounded-xl shadow-lg overflow-hidden">
-                    <img src="images/image2.jpg" alt="Group of friends getting ready to raft" class="w-full h-full object-cover">
-                </div>
-                <div class="flex-1 rounded-xl shadow-lg overflow-hidden">
-                    <img src="images/image3.jpg" alt="Excited rafters on a rapid" class="w-full h-full object-cover">
-                </div>
-                <div class="flex-1 rounded-xl shadow-lg overflow-hidden">
-                    <img src="images/image5.jpg" alt="A team celebrating after a rafting trip" class="w-full h-full object-cover">
-                </div>
-                <div class="flex-1 rounded-xl shadow-lg overflow-hidden">
-                    <img src="images/image9.jpg" alt="Rafts floating on calm water" class="w-full h-full object-cover">
-                </div>
+        <section class="slideshow-container-section">
+            <h2>Adventure Awaits You</h2>
+            <div class="slideshow-container">
+                <img src="images/image11.jpg" alt="Rafters on a river with a guide">
+                <img src="images/image2.jpg" alt="Group of friends getting ready to raft">
+                <img src="images/image3.jpg" alt="Excited rafters on a rapid">
+                <img src="images/image5.jpg" alt="A team celebrating after a rafting trip">
+                <img src="images/image9.jpg" alt="Rafts floating on calm water">
             </div>
         </section>
-        
-
     </main>
-
-    <footer class="bg-gray-900 text-white p-6 mt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-sm mb-4 md:mb-0">&copy; 2025 WhiteWater Rafting | Austin Anumudu</p>
-        <nav class="socialmedia flex gap-4">
-            <a href="https://facebook.com" target="_blank" class="hover:opacity-75 transition-opacity duration-200">
-                <img src="images/facebookicon.webp" alt="Facebook Logo" class="h-8 w-8">
+    <footer>
+        <p>© 2025 WhiteWater Rafting | Austin Anumudu</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebookicon.webp" alt="Facebook Logo">
             </a>
-            <a href="https://youtube.com" target="_blank" class="hover:opacity-75 transition-opacity duration-200">
-                <img src="images/twittericon.webp" alt="Twitter Logo" class="h-8 w-8">
+            <a href="https://x.com" target="_blank">
+                <img src="images/twittericon.webp" alt="Twitter Logo">
             </a>
-            <a href="https://instagram.com" target="_blank" class="hover:opacity-75 transition-opacity duration-200">
-                <img src="images/instagramicon.webp" alt="Instagram Logo" class="h-8 w-8">
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagramicon.webp" alt="Instagram Logo">
             </a>
         </nav>
     </footer>
